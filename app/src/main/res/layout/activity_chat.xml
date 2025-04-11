@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_cont"
+    tools:context=".ChatActivity">
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/constraintLayout2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@color/purple_200"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView11"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:text="ChatPix"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button6"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/welcomebtn"-->
+<!--        android:backgroundTint="@color/teal_700"-->
+<!--        android:drawableStart="@drawable/baseline_add_24"-->
+<!--        android:drawableTint="@color/white"-->
+<!--        android:paddingStart="10dp"-->
+<!--        android:text="New Chat"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/chipNavigationBar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/out"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Sign out"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/chipNavigationBar"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/gif1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:src="@drawable/chatgif"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/chatlst"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="70dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">-->
+
+
+<!--    </ListView>-->
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipNavigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        app:cnb_menuResource="@menu/chat_activity_dropdown"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_animationDuration="100"
+        app:cnb_iconSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="5dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber2"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber2" />
+
+        <EditText
+            android:id="@+id/editTextNumber2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber3"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber3" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber3"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber3"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber3" />
+
+        <EditText
+            android:id="@+id/editTextNumber5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber4"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNumber6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber4"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber4" />
+
+        <EditText
+            android:id="@+id/editTextNumber6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/textboxshape"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextNumber5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextNumber5"
+            app:layout_constraintTop_toTopOf="@+id/editTextNumber5" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/otpimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter the OTP that has been send to :"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="+91XXXXXXXXXX"
+            android:textColor="@color/teal_700"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Didn't received OTP ?"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Here"
+            android:textColor="@color/teal_700"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="17sp"
+            android:background="@drawable/welcomebtn"
+            android:backgroundTint="@color/purple_200"
+            android:elevation="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

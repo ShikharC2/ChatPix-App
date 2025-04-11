@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+        android:title="Chats"
+        android:checked="true"
+        android:icon="@drawable/baseline_message_24"
+        app:cnb_backgroundColor="@color/teal_700"
+        app:cnb_iconColor="@color/white"/>
+    <item android:id="@+id/item2"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        app:cnb_backgroundColor="#E91E63"
+        app:cnb_iconColor="@color/white"/>
+    <item android:id="@+id/setting"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"
+        app:cnb_backgroundColor="@color/purple_200"
+        app:cnb_iconColor="@color/white"/>
+</menu>
